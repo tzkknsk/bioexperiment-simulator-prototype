@@ -106,7 +106,7 @@ with st.container(border=True):
 
             time.sleep(1)
 
-        st.write("実験が完了しました。実験結果が記載されたファイルをダウンロードしてください。")
+        st.success("実験が完了しました。実験結果が記載されたファイルをダウンロードしてください。")
 
         tab1_new, tab2_new = st.tabs(tabnames)
 
@@ -121,7 +121,7 @@ with st.container(border=True):
 
         # ダウンロードボタン
         st.download_button(
-            label="Download Experimental Result (.xlsx)",
+            label="実験結果をダウンロード",
             data=excel_file,
             file_name="optimization_problem_setting_sheet.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
