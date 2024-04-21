@@ -63,7 +63,7 @@ with st.container(border=True):
         ss.result = _result
 
         with tab1:
-            st.data_editor(ss.design, num_rows="dynamic")
+            ss.design = st.data_editor(ss.design, num_rows="dynamic")
 
         with tab2:
             st.dataframe(ss.result)
